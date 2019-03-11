@@ -1,0 +1,40 @@
+﻿<HTML>
+<HEAD>
+	<link rel="stylesheet" type="text/css" href="memo.css" />
+</HEAD>
+<BODY>
+	<DIV id="div0">
+		文字コード変換メモ帳
+	</DIV>
+	<DIV id="div1">
+		JISコード入力
+	</DIV>
+	<DIV id="div2">
+		<TEXTAREA id="text1" cols="130" rows="15"></TEXTAREA>
+	</DIV>
+	<DIV>
+		　
+	</DIV>
+	<DIV id="div3">
+		JISコード⇒Unicodeへ<BUTTON id="btn1" onclick>↓変換</BUTTON>　　　<BUTTON id="btn2" onclick>↑変換</BUTTON>Unicode⇒JISコードへ
+	</DIV>
+	<DIV id="div4">
+		Unicode入力
+	</DIV>
+	<DIV id="div5">
+		<TEXTAREA id="text2" cols="130" rows="15"></TEXTAREA>
+	</DIV>
+	<SCRIPT>
+		var Text1 = document.getElementById('text1');
+		var Text2 = document.getElementById('text2');
+		btn1.addEventListener('click', function() {
+			var val1 = Text1.value;
+			Text2.value = escape(val1);
+		});
+		btn2.addEventListener('click', function() {
+			var val2 = Text2.value;
+			Text1.value = unescape(val2);
+		});
+	</SCRIPT>
+</BODY>
+</HTML>

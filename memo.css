@@ -1,0 +1,25 @@
+body {
+	background-color :lightgray;
+	margin 10px 10px 10px 10px;
+	text-align: center;
+}
+#div0 {
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: left;
+}
+#btn1 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+#btn2 {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+#div1,#div4 {
+	font-size: 1.4em;
+	font-weight: bold;
+	text-align: left;
+}
